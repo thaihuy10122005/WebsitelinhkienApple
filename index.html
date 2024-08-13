@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-6.6.0-web/css/all.min.css">
+</head>
+<body>
+    <!-- Block Elemant Modifier -->
+    <div class="app">
+        <header class="header"> 
+            <div class="grid">
+                <nav class="header__navbar">
+                    <div class="header__navbar-list">
+                        <div class="header__logo ">
+                            <img src="https://linhkienip.vn/wp-content/uploads/2023/06/logo-1.png" class="header__logo-img" alt="linhkienip">
+                        </div>
+                        <div class="header__search ">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <i class="header__navbar-icon fa-solid fa-phone"></i>
+                            Hotline
+                        </li>
+                        <li class="header__navbar-item header__cart-layout">
+                            Giỏ hàng
+                            <a href="" class="header__navbar-icon-link"><i class="header__navbar-icon fa-solid fa-cart-shopping"></i></a>
+                            <!-- no has cart:header__cart-list--no-cart -->
+                            <div class="header__cart-list ">
+                                <img src="./assets/img-img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <!-- cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img-img/cart/mat kinh.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Mặt kính cảm ứng Apple Watch Seri 1 38mm</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">79.000 đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Apple Watch
+                                                </span>
+                                                <span class="header__cart-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img-img/cart/camera.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Camera trước iPhone 6</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">80.000 đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Camera
+                                                </span>
+                                                <span class="header__cart-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img-img/cart/màng hinh.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Kính Cảm Ứng Ipad Air 3  2019 / 10.5inch</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">300.000 đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">2</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: Ipad
+                                                </span>
+                                                <span class="header__cart-item-remove">xóa</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="" class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</a>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-user">
+                            Tài khoản
+                            <a href="dangnhap.html" class="header__navbar-icon-user header__navbar-icon-link"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                    </ul>
+      
+                </nav>
+                
+            </div>
+
+        </header>
+ 
+    <div class="header__menu">
+        <nav class="menu">
+            <select name="Suon-vo">
+                <option value="1">Sườn vỏ - Kính lưng</option>
+                <option value="2">Kính lưng iPhone</option>
+                <option value="3">Phím bấm, khay sim</option>
+                <option value="4">Sườn vỏ iPad</option>
+                <option value="5">Sườn vỏ iPhone đỏ</option>
+                <option value="6">Sườn vỏ iPhone zin</option>
+            </select>
+            <select name="Man-hinh">
+                <option value="1">Màn hình</option>
+                <option value="2">Màn hình LCD ZY</option>
+                <option value="3">Màn hình Zin</option>
+                <option value="4">Màn hình JK</option>
+                <option value="5">Màn hình Amoled 6x</option>
+            </select>
+            <select name="Pin">
+                <option value="1">Pin - Phôi pin</option>
+                <option value="2">Phôi pin iPhone</option>
+                <option value="3">Pin Airpod</option>
+                <option value="4">Pin iPad</option>
+                <option value="5">Pin iPhone</option>
+            </select>
+            <select name="Box-cap-fix">
+                <option value="1">Box - Cáp fix</option>
+                <option value="2">Box - Cáp fix pin</option>
+                <option value="3">Box - Cáp face ID</option>
+            </select>
+            <select name="Jcid">
+                <option value="1">JCID</option>
+                <option value="2">Box V1S Pro</option>
+                <option value="3">Thanh fix pin</option>
+                <option value="4">Thanh fix True Tone</option>
+                <option value="5">Box Fix V1SE</option>
+            </select>
+            <select name="Vat-tu-ep-kinh">
+                <option value="1">Vật tư ép kính</option>
+                <option value="2">Thanh fix True Tone</option>
+            </select>
+            <select name="Thiet-bi-vat-tu">
+                <option value="1">Thiết bị - Vật tư</option>
+            </select> 
+        </nav>
+    </div>
+    <div class="section-content-relative">
+    <ul class="section-content-relative-name">
+        <li class="section-content-relative-item">
+            <i class="section-content-relative-icon fa-solid fa-truck-fast"></i>
+            10 Năm phân phối sỉ
+        </li>
+        <li class="section-content-relative-item">
+            <i class="section-content-relative-icon fa-solid fa-blender-phone"></i>
+            Dịch vụ online 10 năm
+        </li>
+        <li class="section-content-relative-item">
+            <i class="section-content-relative-icon fa-solid fa-people-line"></i>
+            20 +Nhân viên
+        </li>
+        <li class="section-content-relative-item">
+            <i class="section-content-relative-icon fa-regular fa-handshake"></i>
+            500 +Khách hàng sỉ
+        </li>
+    </ul>
+    </div>
+</div>
+</div>
+    <section class="container-my_4">
+        <div class="banner">
+            <div class="main-banner">
+                <img src="assets/img-img/product/bottrap/qc1.png" alt="Banner Chính">
+            </div>
+            <div class="side-banner">
+                <img src="assets/img-img/product/bottrap/qcn1.png" alt="Banner Phụ 1">
+                <img src="assets/img-img/product/bottrap/qcn2.png " alt="Banner Phụ 2">
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+
+    <section class="container-my_4">
+        <div class="product">
+            <div class="product-name">
+                <h4>Cảm Ứng IPad</h4>
+            </div>
+            <div class="move__page">
+                <span class="more__page-text">Xem thêm</span><i class="fa-solid fa-chevron-right  move__page-icon"></i>
+            </div>
+        </div>
+        <div class="products-section">
+            <div class="main-product">
+                <img src="assets/img-img/product/cam-ung-ipad/ipad.png" alt="Sản Phẩm Chính">
+            </div>
+            <div class="side-products">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/ipad1.png" alt="Sản Phẩm 1">
+                        <span class="product-item ">Kính Cảm Ứng Ipad Air 3  2019 / 10.5inch</span>
+                        <div><span class="product-item-price"> 300.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/ipad2.png" alt="Sản Phẩm 2">
+                        <span class="product-item-name">Kính cảm ứng Ipad mini 4</span>
+                        <div><span class="product-item-price">200.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/ipad3.png" alt="Sản Phẩm 3">
+                        <span class="product-item-name">Kính Cảm Ứng Ipad Mini 5</span>
+                        <div><span class="product-item-price">250.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/ipad4.png" alt="Sản Phẩm 4">
+                        <span class="product-item-name">Kính Cảm Ứng Ipad Mini 6</span>
+                        <div><span class="product-item-price">350.000đ</span> </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/ipad5.png" alt="Sản Phẩm 5">
+                        <span class="product-item-name">Kính cảm ứng Ipad Pro 10.5 inch (2017)</span>
+                        <div><span class="product-item-price">250.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/iPad6.png" alt="Sản Phẩm 6">
+                        <span class="product-item-name">Kính cảm ứng Ipad Pro 11 inch (2018/2020)</span>
+                        <div><span class="product-item-price">450.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/iPad7.png" alt="Sản Phẩm 7">
+                        <span class="product-item-name">Kính cảm ứng Ipad Pro 11 inch (2021/2022)</span>
+                        <div><span class="product-item-price">450.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/ipad8.png" alt="Sản Phẩm 8">
+                        <span class="product-item-name">Kính cảm ứng Ipad Pro 11 inch  GEN1</span>
+                        <div><span class="product-item-price">400.000đ</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-my_4">
+        <div class="product">
+            <div class="product-name">
+                <h4>Cảm Ứng IPad</h4>
+            </div>
+            <div class="move__page">
+                <span class="more__page-text">Xem thêm</span><i class="fa-solid fa-chevron-right  move__page-icon"></i>
+            </div>
+        </div>
+        <div class="products-section">
+            <div class="main-product">
+                <img src="assets/img-img/product/watch/watch.png" alt="Sản Phẩm Chính">
+            </div>
+            <div class="side-products">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/watch/watch1.png" alt="Sản Phẩm 1">
+                        <span class="product-item-name">Mặt kính cảm ứng Apple Watch Seri 1 38mm</span>
+                        <div><span class="product-item-price">79.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/watch/watch2.png" alt="Sản Phẩm 2">
+                        <span class="product-item-name">Mặt kính cảm ứng Apple Watch Seri 1 42mm</span>
+                        <div><span class="product-item-price">80.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/watch/watch3.png" alt="Sản Phẩm 3">
+                        <span class="product-item-name">Mặt kính cảm ứng Apple Watch Seri 2/3 38mm</span>
+                        <div><span class="product-item-price">300.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/watch/watch4.png" alt="Sản Phẩm 4">
+                        <span class="product-item-name">Mặt kính cảm ứng Apple Watch Seri 2/3 42mm</span>
+                        <div><span class="product-item-price">300.000đ</span></div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/watch/watch5.png" alt="Sản Phẩm 5">
+                        <span class="product-item-name">Mặt kính cảm ứng Apple Watch Seri 4 40mm</span>
+                        <div><span class="product-item-price">150.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/iPad6.png" alt="Sản Phẩm 6">
+                        <span class="product-item-name">Mặt kính cảm ứng Apple Watch Seri 4 44mm</span>
+                        <div><span class="product-item-price">150.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/iPad7.png" alt="Sản Phẩm 7">
+                        <span class="product-item-name">Mặt kính cảm ứng Apple Watch Seri 5 40mm</span>
+                        <div><span class="product-item-price">150.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/cam-ung-ipad/ipad8.png" alt="Sản Phẩm 8">
+                        <span class="product-item-name">Mặt kính cảm ứng Apple Watch Seri 5 44mm</span>
+                        <div><span class="product-item-price">150.000đ</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-my_4">
+        <div class="product">
+            <div class="product-name">
+                <h4>Cảm Ứng IPad</h4>
+            </div>
+            <div class="move__page">
+                <span class="more__page-text">Xem thêm</span><i class="fa-solid fa-chevron-right  move__page-icon"></i>
+            </div>
+        </div>
+        <div class="products-section">
+            <div class="main-product">
+                <img src="assets/img-img/product/kinhlung/kinhlung.png" alt="Sản Phẩm Chính">
+            </div>
+            <div class="side-products">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/kinhlung/kinhlung1.png" alt="Sản Phẩm 1">
+                        <span class="product-item-name">Kính lưng iPhone 11</span>
+                        <div><span class="product-item-price">70.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/kinhlung/kinhlung2.png" alt="Sản Phẩm 2">
+                        <span class="product-item-name">Kính lưng iPhone 11 Pro</span>
+                        <div><span class="product-item-price">80.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/kinhlung/kinhlung3.png" alt="Sản Phẩm 3">
+                        <span class="product-item-name">Kính lưng iPhone 11 Pro Max</span>
+                        <div><span class="product-item-price">100.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/kinhlung/kinhlung4.png" alt="Sản Phẩm 4">
+                        <span class="product-item-name">Kính lưng iPhone 12 </span>
+                        <div><span class="product-item-price">70.000đ</span></div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/kinhlung/kinhlung5.png" alt="Sản Phẩm 5">
+                        <span class="product-item-name">Kính lưng iPhone 12 Mini</span>
+                        <div><span class="product-item-price">60.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/kinhlung/kinhlung6.png" alt="Sản Phẩm 6">
+                        <span class="product-item-name">Kính lưng iPhone 12 Pro</span>
+                        <div><span class="product-item-price">100.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/kinhlung/kinhlung7.png" alt="Sản Phẩm 7">
+                        <span class="product-item-name">Kính lưng iPhone 12 Pro Max</span>
+                        <div><span class="product-item-price">100.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/kinhlung/kinhlung8.png" alt="Sản Phẩm 8">
+                        <span class="product-item-name">Kính lưng iPhone X</span>
+                        <div><span class="product-item-price">35.000đ</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-my_4">
+        <div class="product">
+            <div class="product-name">
+                <h4>Cảm Ứng IPad</h4>
+            </div>
+            <div class="move__page">
+                <span class="more__page-text">Xem thêm</span><i class="fa-solid fa-chevron-right  move__page-icon"></i>
+            </div>
+        </div>
+        <div class="products-section">
+            <div class="main-product">
+                <img src="assets/img-img/product/camera/camera.png" alt="Sản Phẩm Chính">
+            </div>
+            <div class="side-products">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/camera/camera1.png" alt="Sản Phẩm 1">
+                        <span class="product-item-name">Camera trước iPhone 6</span>
+                        <div><span class="product-item-price">80.000đ</span></div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/camera/camera2.png" alt="Sản Phẩm 2">
+                        <span class="product-item-name">Camera trước iPhone 6s</span>
+                        <div><span class="product-item-price">8.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/camera/camera3.png" alt="Sản Phẩm 3">
+                        <span class="product-item-name">Camera trước iPhone 6 Plus</span>
+                        <div><span class="product-item-price">80.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/camera/camera4.png" alt="Sản Phẩm 4">
+                        <span class="product-item-name">Camera trước iPhone 6s Plus</span>
+                        <div><span class="product-item-price">80.000đ</span> </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/camera/camera5.png" alt="Sản Phẩm 5">
+                        <span class="product-item-name">Camera trước iPhone 7</span>
+                        <div><span class="product-item-price">50.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/camera/camera6.png" alt="Sản Phẩm 6">
+                        <span class="product-item-name">Camera trước iPhone 7Plus</span>
+                        <div><span class="product-item-price">90.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/camera/camera7.png" alt="Sản Phẩm 7">
+                        <span class="product-item-name">Camera trước iPhone 8</span>
+                        <div><span class="product-item-price">90.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/camera/camera8.png" alt="Sản Phẩm 8">
+                        <span class="product-item-name">Camera trước iPhone 8Plus </span>
+                        <div><span class="product-item-price">90.000đ</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-my_4">
+        <div class="product">
+            <div class="product-name">
+                <h4>Cảm Ứng IPad</h4>
+            </div>
+            <div class="move__page">
+                <span class="more__page-text">Xem thêm</span><i class="fa-solid fa-chevron-right  move__page-icon"></i>
+            </div>
+        </div>
+        <div class="products-section">
+            <div class="main-product">
+                <img src="assets/img-img/product/boxfix/boxfix.png" alt="Sản Phẩm Chính">
+            </div>
+            <div class="side-products">
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/boxfix/boxfix1.png" alt="Sản Phẩm 1">
+                        <span class="product-item-name">Cap Fix Face ID Luban Iphone X</span>
+                        <div><span class="product-item-price">90.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/boxfix/boxfix2.png" alt="Sản Phẩm 2">
+                        <span class="product-item-name">Cap Fix Face ID Luban Iphone XS</span>
+                        <div><span class="product-item-price">90.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/boxfix/boxfix3.png" alt="Sản Phẩm 3">
+                        <span class="product-item-name">Cap Fix Face ID Luban Iphone XS Max</span>
+                        <div><span class="product-item-price">90.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/boxfix/boxfix4.png" alt="Sản Phẩm 4">
+                        <span class="product-item-name">Cap Fix Face ID Luban Iphone 11</span>
+                        <div><span class="product-item-price">120.000đ</span> </div>
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product-item">
+                        <img src="assets/img-img/product/boxfix/boxfix5.png" alt="Sản Phẩm 5">
+                        <span class="product-item-name">Cap Fix Face ID Luban Iphone 11 Pro</span>
+                        <div><span class="product-item-price">120.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/boxfix/boxfix6.png" alt="Sản Phẩm 6">
+                        <span class="product-item-name">Cap Fix Face ID Luban Iphone 11 Pro Max</span>
+                        <div><span class="product-item-price">120.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/boxfix/boxfix7.png" alt="Sản Phẩm 7">
+                        <span class="product-item-name">Cap Fix Face ID Luban Iphone 12 Pro Max</span>
+                        <div><span class="product-item-price">160.000đ</span> </div>
+                    </div>
+                    <div class="product-item">
+                        <img src="assets/img-img/product/boxfix/boxfix8.png" alt="Sản Phẩm 8">
+                        <span class="product-item-name">Cap fix Face ID Luban Iphone 12 Pro</span>
+                        <div><span class="product-item-price">120.000đ</span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>
